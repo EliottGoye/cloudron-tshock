@@ -16,7 +16,7 @@ A [Cloudron](https://cloudron.io/) package for [TShock](https://tshock.readme.io
 ```bash
 git clone https://git.tachy.dev/eliott/cloudron-tshock.git
 cd cloudron-tshock
-cloudron install -p GAME_PORT=7777
+cloudron install -p GAME_PORT=7777 --env TERRARIA_PASSWORD=mysecret
 ```
 
 ## Environment variables
@@ -24,12 +24,6 @@ cloudron install -p GAME_PORT=7777
 | Variable            | Description                      | Default  |
 |---------------------|----------------------------------|----------|
 | `TERRARIA_PASSWORD` | Server password required to join | *(none)* |
-
-Set via the Cloudron dashboard or CLI:
-
-```bash
-cloudron env set --app <app> TERRARIA_PASSWORD=mysecret
-```
 
 > **Note:** `TERRARIA_PASSWORD` is written to `config.json` on first install only.
 > To change it afterwards, edit `/app/data/tshock/config.json` directly or delete
@@ -49,13 +43,13 @@ Then restart the app to apply changes.
 
 Key fields set at first-run time:
 
-| Field            | Default | Description                     |
-|------------------|---------|---------------------------------|
-| `ServerPort`     | `7777`  | Game port (matches `GAME_PORT`) |
-| `MaxSlots`       | `16`    | Maximum player slots            |
-| `ServerPassword` | `""`    | Join password                   |
-| `RestApiEnabled` | `true`  | Enables the REST API            |
-| `RestApiPort`    | `7878`  | REST API port                   |
+| Field            | Default | Description          |
+|------------------|---------|----------------------|
+| `ServerPort`     | `7777`  | Game port            |
+| `MaxSlots`       | `16`    | Maximum player slots |
+| `ServerPassword` | `""`    | Join password        |
+| `RestApiEnabled` | `true`  | Enables the REST API |
+| `RestApiPort`    | `7878`  | REST API port        |
 
 ## REST API
 
