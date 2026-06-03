@@ -32,5 +32,12 @@
     "setup-admin": {
       "message": "Get the `/setup` code from the logs and run it in-game to create the admin account."
     }
-  }
+  },
+  "iconUrl": "https://raw.githubusercontent.com/EliottGoye/cloudron-tshock/refs/heads/main/icon.png",
+  "packagerName": "Tachy",
+  "packagerUrl": "https://github.com/EliottGoye/cloudron-tshock",
+  "minBoxVersion": "9.1.0",
+  "mediaLinks": [
+    "https://raw.githubusercontent.com/EliottGoye/cloudron-tshock/refs/heads/main/icon.png"
+  ]
 }
