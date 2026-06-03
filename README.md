@@ -16,7 +16,7 @@ A [Cloudron](https://cloudron.io/) package for [TShock](https://tshock.readme.io
 Use **Add Custom app** -> **Community App** and use this `CloudronVersions.json` URL:
 
 ```
-https://raw.githubusercontent.com/EliottGoye/cloudron-tshock/refs/heads/master/CloudronVersions.json
+https://raw.githubusercontent.com/EliottGoye/cloudron-tshock/refs/heads/main/CloudronVersions.json
 ```
 
 ### From source
