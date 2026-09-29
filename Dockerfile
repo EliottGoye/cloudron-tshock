@@ -1,4 +1,4 @@
-FROM ghcr.io/pryaxis/tshock:6.1@sha256:911459f0ce02014a64c197647a16e9ee57e4d16695de8cfda1f1b552af56ab43
+FROM ghcr.io/pryaxis/tshock:6.2@sha256:70e59a8e6b4c79b5fad469d320962c1fc98625ed3a955510a2f2641dbff2f7e7 
 
 USER root
 

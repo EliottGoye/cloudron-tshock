@@ -49,6 +49,55 @@
       "creationDate": "Wed, 03 Jun 2026 09:49:18 GMT",
       "ts": "Wed, 03 Jun 2026 09:49:18 GMT",
       "publishState": "published"
+    },
+    "0.0.2": {
+      "manifest": {
+        "manifestVersion": 2,
+        "id": "net.tshock.cloudronapp",
+        "title": "TShock",
+        "tagline": "Modded Terraria server with advanced management",
+        "version": "0.0.2",
+        "upstreamVersion": "6.2",
+        "author": "Tachy",
+        "description": "TShock is an open-source Terraria server offering user and group management, anti-cheat, protected regions, a SQLite database, and a full REST API for remote administration.",
+        "website": "https://tshock.readme.io/",
+        "documentationUrl": "https://tshock.readme.io/",
+        "contactEmail": "me@tachy.dev",
+        "tags": ["game"],
+        "icon": "file://icon.png",
+        "changelog": "* Updated to TShock 6.2",
+        "httpPort": 7878,
+        "healthCheckPath": "/v2/server/status",
+        "tcpPorts": {
+          "GAME_PORT": {
+            "title": "Terraria Port",
+            "description": "TCP port on which Terraria clients connect.",
+            "containerPort": 7777,
+            "defaultValue": 7777
+          }
+        },
+        "addons": {
+          "localstorage": {}
+        },
+        "memoryLimit": 2147483648,
+        "postInstallMessage": "## TShock installed!\n\nThe Terraria server is available on port **$GAME_PORT**.\n\nThe REST API is accessible at: **$CLOUDRON-APP-ORIGIN**\n\nFirst start:\n1. Check the logs to get the `/setup` code\n2. Connect to the Terraria server and run `/setup <code>`\n3. Your REST superadmin token is in `/app/data/rest-api-credentials.txt`",
+        "checklist": {
+          "setup-admin": {
+            "message": "Get the `/setup` code from the logs and run it in-game to create the admin account."
+          }
+        },
+        "iconUrl": "https://raw.githubusercontent.com/EliottGoye/cloudron-tshock/refs/heads/main/icon.png",
+        "packagerName": "Tachy",
+        "packagerUrl": "https://github.com/EliottGoye/cloudron-tshock",
+        "minBoxVersion": "9.1.0",
+        "mediaLinks": [
+          "https://raw.githubusercontent.com/EliottGoye/cloudron-tshock/refs/heads/main/icon.png"
+        ],
+        "dockerImage": "ghcr.io/eliottgoye/cloudron-tshock:0.0.2@sha256:cadfc4b1106569fd45a23be91904ec8aebfbc8221f70012904941487d6f5f0c9"
+      },
+      "creationDate": "Tue, 29 Sep 2026 10:05:21 GMT",
+      "ts": "Tue, 29 Sep 2026 10:05:21 GMT",
+      "publishState": "published"
     }
   }
 }
